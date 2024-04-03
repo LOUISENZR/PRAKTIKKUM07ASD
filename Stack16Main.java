@@ -23,13 +23,14 @@ public class Stack16Main {
             System.out.print("Apakah anda akan menambahkan data baru ke stack (y/n)");
             pilih = sc16.next().charAt(0);
             sc16.nextLine();
+            s.push(p);
         }while(pilih=='y'); 
     }
     public static void main(String[] args) {
-        Stack16 stk = new Stack16(5);
+        Stack16 stk = new Stack16(8);
         Stack16Main sm = new Stack16Main();
         boolean IsTrue = true;
-        while(true){
+        while(IsTrue){
             System.out.println("================================================");
             System.out.println("Pilih Menu Stack");
             System.out.println("1. Push");
